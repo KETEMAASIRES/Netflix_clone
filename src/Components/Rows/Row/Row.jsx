@@ -12,9 +12,9 @@ function Row({ title, fetchUrl, islargeRow }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        console.log(fetchUrl);
+        // console.log(fetchUrl);
         const request = await axios.get(fetchUrl);
-        console.log(request);
+        // console.log(request);
         setMovie(request.data.results);
       } catch (error) {
         console.log("error", error);
